@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MedTracker</title>
+    <script>
+      // GitHub Pages SPA redirect trick.
+      // Stores the current path in sessionStorage then redirects to index.html
+      // so the React app can pick it up and route correctly.
+      var repo = '/' + window.location.pathname.split('/')[1];
+      var path = window.location.pathname.slice(repo.length) + window.location.search;
+      sessionStorage.setItem('redirect', path || '/');
+      window.location.replace(window.location.origin + repo + '/');
+    </script>
+  </head>
+  <body></body>
+</html>
