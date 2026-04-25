@@ -15,7 +15,7 @@ import react from '@vitejs/plugin-react'
 //  and the repo is named yourname.github.io, set:
 //    base:      '/'
 // ─────────────────────────────────────────────────────────────
-const REPO_NAME = 'vibe-medicine-tracker' // <- change this to your repo name
+const REPO_NAME = '/vibe-medicine-tracker/' // <- change this to your repo name
 
 export default defineConfig({
   plugins: [react()],
